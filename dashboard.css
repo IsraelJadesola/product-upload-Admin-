@@ -21,16 +21,13 @@
 }
 
 #display {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 @media (max-width: 380px) {
-    .up-btn {
-        width: ;
-    }
-    .edit-del-td {
-        display: none;
-    }
+  .edit-del-td {
+    display: none;
+  }
   .edit span {
     display: none;
   }
