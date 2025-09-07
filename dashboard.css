@@ -24,14 +24,17 @@
   background-color: transparent;
 }
 
-
 @media (max-width: 380px) {
-    .t1 {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 0.6em;
-    }
-    .edit-del-td {
+  .mmm {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .t1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.6em;
+  }
+  .edit-del-td {
     display: none;
   }
   .edit span {
