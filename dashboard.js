@@ -38,7 +38,7 @@ function productShow() {
         for (s = 0; s < productArray.length; s++) {
             document.querySelector('#display tbody').innerHTML +=
                 `<tr>
-                    <td>${s + 1}. &nbsp; ${productArray[s].name}</td>
+                    <td>$${productArray[s].name}</td>
                     <td>${productArray[s].price}</td>
                     <td>${productArray[s].quantity}</td>
                     <td><button onclick="editBtn(${s})" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success edit">Edit</button>
