@@ -23,24 +23,14 @@
 #display {
   background-color: transparent;
 }
+.mmm {
+  margin-top: 20px;
+}
 
 @media (max-width: 380px) {
-  .mmm {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .t1 {
     display: flex;
     flex-wrap: wrap;
     font-size: 0.6em;
-  }
-  .edit-del-td {
-    display: none;
-  }
-  .edit span {
-    display: none;
-  }
-  .del span {
-    display: none;
   }
 }
