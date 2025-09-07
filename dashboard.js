@@ -41,7 +41,7 @@ function productShow() {
                     <td>${productArray[s].price}</td>
                     <td>${productArray[s].quantity}</td>
                     <td><button onclick="editBtn(${s})" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success edit">Edit</button>
-                    <button onclick="delBtn(${s})" class="btn btn-danger del">Delete</button></td>
+                    <button onclick="delBtn(${s})" class="btn btn-danger del mt-3">Delete</button></td>
                 </tr>`
 
             pName.value = ''
