@@ -29,7 +29,7 @@
     .t1 {
         display: flex;
         flex-wrap: wrap;
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
     .edit-del-td {
     display: none;
