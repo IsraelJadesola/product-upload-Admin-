@@ -32,7 +32,6 @@ function productShow() {
                 <th>Name</th>
                 <th>Price</th>
                 <th>Quantity</th>
-                <td class="edit-del-td">edit/delete item(s)</td>
             </tr>`
 
         for (s = 0; s < productArray.length; s++) {
