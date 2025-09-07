@@ -6,27 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>new</title>
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="dashboard.css">
 
-    <style>
-        .back-img {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url(img/restaurant-interior.jpg);
-            background-size: cover;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            
-            z-index: -100;
-        }
-    </style>
 </head>
 
 <body>
     <div class="back-img"></div>
 
     <img data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
-        src="img/menu.png" style="width: 3%; filter: invert(1); position: fixed;" class="mt-3 ms-4" alt="">
+        src="img/menu.png" style="width: 3%; filter: invert(1); position: fixed; z-index: 100;" class="mt-3 ms-4"
+        alt="">
 
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -39,24 +28,27 @@
         </div>
     </div>
 
-    <div class="card px-5 py-4 mt-5 mx-auto bg-warning col-md-7 col-lg-5 col-sm-10">
-        <h1 class="text-center fw-bold mb-4 text-black">Product Upload <br> (Admin End)</h1>
+    <div class="card px-5 py-4 mt-5 mx-auto col-md-7 col-lg-5 col-sm-10 c1">
+        <h1 class="text-center fw-bold mb-4 text-white">Product Upload <br> (Admin End)</h1>
 
-        <label for="pName" class="fw-bold fs-5 text-black">Name of Product</label>
+        <label for="pName" class="fw-bold fs-5 text-white">Name of Product</label>
         <input id="pName" type="text" placeholder="Name..." class="mb-3 form-control">
 
-        <label for="pPrice" class="fw-bold fs-5 text-black">Price of Product</label>
+        <label for="pPrice" class="fw-bold fs-5 text-white">Price of Product</label>
         <input id="pPrice" type="number" placeholder="Price (#)" class="mb-3 form-control">
 
-        <label for="pQty" class="fw-bold fs-5 text-black">Quantity of Product</label>
+        <label for="pQty" class="fw-bold fs-5 text-white">Quantity of Product</label>
         <input id="pQty" type="number" placeholder="Quantity" class="mb-3 form-control">
 
-        <button class="btn btn-success w-25 fw-bold" onclick="uploadBtn()">Upload Product</button>
+        <button class="btn btn-success w-sm-100 w-md-50 mx-sm-auto fw-bold up-btn" onclick="uploadBtn()">Upload Product</button>
     </div>
 
-    <div class="card mt-4 mx-auto p-5 mb-3 col-lg-8 col-md-10 col-sm-11">
-        <table class="table p-0 mb-0" id="display"></table>
+    <div class="card mt-4 mx-auto p-3 mb-3 col-lg-8 col-md-10 col-sm-11 text-white text-center c2">
+        <table class="table p-0 mb-0" id="display">
+
+        </table>
     </div>
+
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

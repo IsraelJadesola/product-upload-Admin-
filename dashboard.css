@@ -1,0 +1,40 @@
+.back-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7)),
+    url(img/restaurant-interior.jpg);
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: -1000;
+}
+
+.c1 {
+  background-color: transparent;
+  border: 0.1px solid salmon;
+}
+
+.c2 {
+  background-color: white;
+}
+
+#display {
+    background-color: transparent;
+}
+
+@media (max-width: 380px) {
+    .up-btn {
+        width: ;
+    }
+    .edit-del-td {
+        display: none;
+    }
+  .edit span {
+    display: none;
+  }
+  .del span {
+    display: none;
+  }
+}

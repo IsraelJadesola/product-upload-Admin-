@@ -32,17 +32,17 @@ function productShow() {
                 <th>Name</th>
                 <th>Price</th>
                 <th>Quantity</th>
-                <td>edit/delete item(s)</td>
+                <td class="edit-del-td">edit/delete item(s)</td>
             </tr>`
 
         for (s = 0; s < productArray.length; s++) {
-            display.innerHTML +=
+            document.querySelector('#display tbody').innerHTML +=
                 `<tr>
                     <td>${s + 1}. &nbsp; ${productArray[s].name}</td>
                     <td>${productArray[s].price}</td>
                     <td>${productArray[s].quantity}</td>
-                    <td><button onclick="editBtn(${s})" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Edit item</button>
-                    <button onclick="delBtn(${s})" class="btn btn-danger ms-3">Delete item</button></td>
+                    <td><button onclick="editBtn(${s})" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success edit">Edit <span>item</span></button>
+                    <button onclick="delBtn(${s})" class="btn btn-danger ms-3 del">Delete <span>item</span></button></td>
                 </tr>`
 
             pName.value = ''
